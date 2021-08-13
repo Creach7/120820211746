@@ -1,0 +1,163 @@
+@function vw($pix) {
+  @return ($pix/489px)*100vw;
+}
+
+@function per($pix) {
+  @return ($pix/489px)*100;
+}
+
+@function fun($pix, $value) {
+  @return (per($pix)/100)*$value;
+}
+
+@function mini($pix, $value: 360px) {
+  @return fun($pix, $value);
+}
+
+@function maxi($pix, $value: 720px) {
+  @return fun($pix, $value);
+}
+
+.width-124 {
+  $pix: 124px;
+
+  @media screen and (max-width: 359px) {
+    width: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    width: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    width: maxi($pix);
+  }
+}
+
+.text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  margin: 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color#808080 {
+  color: #808080;
+}
+
+.fs12 {
+  $pix: 12px;
+
+  @media screen and (max-width: 359px) {
+    font-size: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    font-size: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    font-size: maxi($pix);
+  }
+}
+
+.fs13 {
+  $pix: 13px;
+
+  @media screen and (max-width: 359px) {
+    font-size: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    font-size: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    font-size: maxi($pix);
+  }
+}
+
+.fs14 {
+  $pix: 14px;
+
+  @media screen and (max-width: 359px) {
+    font-size: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    font-size: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    font-size: maxi($pix);
+  }
+}
+
+.fs16 {
+  $pix: 16px;
+
+  @media screen and (max-width: 359px) {
+    font-size: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width:720px) {
+    font-size: vw($pix);
+  }
+
+  @media screen and (min-width:721px) {
+    font-size: maxi($pix);
+  }
+}
+
+.lh15 {
+  $pix: 15px;
+
+  @media screen and (max-width: 359px) {
+    line-height: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    line-height: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    line-height: maxi($pix);
+  }
+}
+
+.lh20 {
+  $pix: 20px;
+
+  @media screen and (max-width: 359px) {
+    line-height: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    line-height: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    line-height: maxi($pix);
+  }
+}
+
+.lh26 {
+  $pix: 26px;
+
+  @media screen and (max-width: 359px) {
+    line-height: mini($pix);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    line-height: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    line-height: maxi($pix);
+  }
+}
