@@ -11,13 +11,15 @@
 
 .comments-send-input {
   // width: 100%;
-  @include makeClass(width, 447px);
+  @include makeClass(width, 440px);
   @include makeClass(height, 63px-4.484px*2);
   @include makeClass(margin-bottom, 23px);
   padding: 1%;
   background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 1px;
+
+  resize: none;
 
   font-family: Arial;
   font-style: normal;

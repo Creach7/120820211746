@@ -5,7 +5,7 @@
   @extend .text;
   @include makeClass(font-size, 16px);
   @include makeClass(line-height, 16px);
-  @include makeClass(margin-right, 15px);
+  @include makeClass(margin-right, 10px);
   font-weight: bold;
   text-decoration-line: none;
 }
@@ -14,17 +14,13 @@
   @extend .text;
   @include makeClass(font-size, 14px);
   @include makeClass(line-height, 16px);
-  @include makeClass(margin-right, 15px);
+  @include makeClass(margin-right, 10px);
   text-decoration-line: underline;
   color: #005DA1;
 }
 
-// .comments-header__text-all {
-//   @extend .text;
-// }
-
 .mar {
-  @include makeClass(margin-right, 16px);
+  @include makeClass(margin-right, 18px);
 }
 
 .marbot {

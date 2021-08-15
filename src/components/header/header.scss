@@ -3,7 +3,7 @@
 
 .header {
   @include makeClass(padding, 20px);
-  @include makeClass(padding-bottom, 16px);
+  @include makeClass(padding-bottom, 13px);
   // background-color: red;
 }
 
@@ -12,10 +12,12 @@
   // margin: 0;
   top: 0;
   left: 0;
-  @include makeClass(top, 14px);
-  @include makeClass(left, 17px);
+  // @include makeClass(top, 14px);
+  // @include makeClass(left, 17px);
   @include makeClass(width, 124px);
   @include makeClass(header, 124px);
+  @include makeClass(padding-top, 12px);
+  @include makeClass(padding-left, 17px);
 }
 
 .header__photo {
@@ -31,6 +33,7 @@
   @include makeClass(font-size, 16px);
   @include makeClass(line-height, 20px);
   @include makeClass(margin-left, 130px);
+  @include makeClass(margin-bottom, 2px);
 
 }
 
@@ -41,6 +44,7 @@
   @include makeClass(font-size, 12px);
   @include makeClass(line-height, 20px);
   @include makeClass(margin-left, 130px);
+  @include makeClass(margin-bottom, 5px);
 
 }
 

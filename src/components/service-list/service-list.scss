@@ -4,7 +4,7 @@
 .service-list {
   @include makeClass(padding-left, 150px);
   @include makeClass(padding-right, 21px);
-  @include makeClass(padding-bottom, 21px);
+  @include makeClass(padding-bottom, 20px);
   @include makeClass(width, 318px);
 }
 
@@ -51,5 +51,5 @@
   @extend .service-list__text-head;
   font-weight: bold;
   @include makeClass(font-size, 16px);
-  @include makeClass(margin-right, 37px);
+  @include makeClass(margin-right, 40px);
 }

@@ -13,7 +13,7 @@
   font-weight: bold;
   @include makeClass(font-size, 14px);
   @include makeClass(line-height, 19px);
-  @include makeClass(margin-right, 15px);
+  @include makeClass(margin-right, 8px);
 }
 
 .comments-list-item__text-date {
