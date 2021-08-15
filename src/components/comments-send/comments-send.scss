@@ -1,0 +1,45 @@
+@import '../../scss/_functions.scss';
+
+.comments-send {
+  @include makeClass(width, 489px-40px);
+  @include makeClass(padding-top, 28px);
+  @include makeClass(padding-left, 20px);
+  @include makeClass(padding-right, 20px);
+  @include makeClass(padding-bottom, 34px);
+  background: #F2F2F2;
+}
+
+.comments-send-input {
+  // width: 100%;
+  @include makeClass(width, 447px);
+  @include makeClass(height, 63px-4.484px*2);
+  @include makeClass(margin-bottom, 23px);
+  padding: 1%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 1px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  @include makeClass(font-size, 14px);
+  @include makeClass(line-height, 19px);
+  // font-size: 14px;
+  // line-height: 19px;
+  color: #333333;
+}
+
+.comments-send-button {
+  background: #FDD639;
+  // border-radius: 23px;
+  @include makeClass(width, 281px);
+  @include makeClass(height, 43px);
+  @include makeClass(border-radius, 23px);
+  border: 0px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  @include makeClass(font-size, 16px);
+  @include makeClass(line-height, 21px);
+  color: #333333;
+}

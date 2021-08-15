@@ -1,17 +1,63 @@
-.description-block {
+@import '../../scss/_functions.scss';
+@import '../../scss/text.scss';
+
+.header {
+  @include makeClass(padding, 20px);
+  @include makeClass(padding-bottom, 16px);
+  // background-color: red;
+}
+
+.header__photo-block {
+  position: absolute;
+  // margin: 0;
+  top: 0;
+  left: 0;
+  @include makeClass(top, 14px);
+  @include makeClass(left, 17px);
+  @include makeClass(width, 124px);
+  @include makeClass(header, 124px);
+}
+
+.header__photo {
+  width: 100%;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.header__text-name {
+  @extend .text;
+
+  font-weight: bold;
+  @include makeClass(font-size, 16px);
+  @include makeClass(line-height, 20px);
+  @include makeClass(margin-left, 130px);
+
+}
+
+.header__text-work {
+  @extend .text;
+
+  color: #808080;
+  @include makeClass(font-size, 12px);
+  @include makeClass(line-height, 20px);
+  @include makeClass(margin-left, 130px);
+
+}
+
+.header__description-block {
+  @include makeClass(margin-left, 86px);
   background: #FFFBC8;
   border: 1px solid #DADADA;
   box-sizing: border-box;
   border-radius: 5px;
+  // @include makeClass(width, 364px);
 }
 
-.photo-block {
-  position: absolute;
-  margin: 0;
-}
-
-.photo {
-  width: 100%;
-  border-radius: 50%;
-  margin: 0;
+.header__text-description {
+  @extend .text;
+  @include makeClass(font-size, 14px);
+  @include makeClass(line-height, 20px);
+  @include makeClass(margin-top, 10px);
+  @include makeClass(margin-bottom, 10px);
+  @include makeClass(margin-left, 45px);
 }

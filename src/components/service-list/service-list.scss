@@ -1,13 +1,55 @@
-ul {
-  border-left: 1px solid rgba(51, 51, 51, 0.2);
-  padding: 0%;
+@import '../../scss/_functions.scss';
+@import '../../scss/text.scss';
+
+.service-list {
+  @include makeClass(padding-left, 150px);
+  @include makeClass(padding-right, 21px);
+  @include makeClass(padding-bottom, 21px);
+  @include makeClass(width, 318px);
 }
 
-.item {
-  list-style-type: none;
+.service-list__text-head {
+  @extend .text;
+  @include makeClass(font-size, 13px);
+  @include makeClass(line-height, 15px);
+  @include makeClass(margin-right, 30px);
 }
 
-.bords{
+.service-list__service-block {
   border-top: 1px solid #DADADA;
   border-bottom: 1px solid #DADADA;
+  @include makeClass(margin-top, 7px);
+  @include makeClass(margin-bottom, 9px);
+}
+
+.list {
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+  margin-left: 0px;
+  padding: 0%;
+  @include makeClass(margin-top, 15px);
+  @include makeClass(margin-buttom, 15px);
+
+  // @include makeClass(margin-right, 37px);
+  li {
+    list-style-type: none;
+  }
+}
+
+.bords {
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+}
+
+.service-list__text-all {
+  @extend .text;
+  font-weight: bold;
+  @include makeClass(font-size, 16px);
+  @include makeClass(line-height, 26px);
+}
+
+.service-list__text-sum {
+  @extend .service-list__text-head;
+  font-weight: bold;
+  @include makeClass(font-size, 16px);
+  @include makeClass(margin-right, 37px);
 }

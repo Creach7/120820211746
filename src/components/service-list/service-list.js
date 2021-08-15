@@ -17,17 +17,17 @@ function ServiceList({ services }) {
     }
   }
   return (
-    <div className='margin-left-130 margin-top-13'>
+    <div className='service-list'>
       <div className='container row-reverse'>
-        <p className='text fs13 lh15 margin-right-30'>Услуг</p>
+        <p className='service-list__text-head'>Услуг</p>
       </div>
-      <div className='bords margin-top-7 margin-bottom-9'>
-        <ul>
+      <div className='service-list__service-block'>
+        <ul className='list'>
           {
             services.map((ser) => {
               return (
-                <li key={ser.id} className='item'>
-                  <ServiceListItem name={ser.name} count={ser.count} proc={(ser.count / sum) * 100} larg={(ser.id === id) ? true : false} />
+                <li key={ser.id}>
+                  <ServiceListItem name={ser.name} count={ser.count} proc={((ser.count / sum) * 100)} larg={(ser.id === id) ? true : false} />
                 </li>
               );
             })
@@ -35,10 +35,10 @@ function ServiceList({ services }) {
         </ul>
       </div>
       <div className='container row'>
-        <p className='text bold fs16 lh26'>
+        <p className='service-list__text-all'>
           Всего
         </p>
-        <p className='text bold fs16 lh15 margin-right-40'>
+        <p className='service-list__text-sum'>
           {sum}
         </p>
       </div>

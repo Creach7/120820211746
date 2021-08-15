@@ -1,0 +1,124 @@
+@import '../../scss/_functions.scss';
+@import '../../scss/text.scss';
+
+.user-container {
+  display: flex;
+  align-items: center;
+  // @include makeClass(margin-bottom, 10px);
+}
+
+.comments-list-item__text-name {
+  @extend .text;
+
+  font-weight: bold;
+  @include makeClass(font-size, 14px);
+  @include makeClass(line-height, 19px);
+  @include makeClass(margin-right, 15px);
+}
+
+.comments-list-item__text-date {
+  @extend .text;
+
+  @include makeClass(font-size, 12px);
+  @include makeClass(line-height, 19px);
+  color: #808080;
+}
+
+.box {
+  @extend .text;
+  @include makeClass(font-size, 14px);
+  @include makeClass(line-height, 19px);
+  background: #F2FBFF;
+  border: 1px solid #C4CBCF;
+  box-sizing: border-box;
+  @include makeClass(width, 450px);
+
+  @include makeClass(margin-top, 10px);
+  @include makeClass(padding, 10px);
+  @include makeClass(padding-left, 20px);
+  position: relative;
+}
+
+.sb10:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  @include makeClass(right, 414px);
+  @include makeClass(top, -12px);
+}
+
+.sb10:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  @include makeClass(right, 415px);
+  @include makeClass(top, -10px);
+}
+
+@media screen and (max-width: 359px) {
+  .box {
+    border: getNewPixels(1px, 360px) solid #C4CBCF;
+  }
+
+  .sb10:before {
+    $new: getNewPixels(6px, 360px);
+    border-left: $new solid #C4CBCF;
+    border-right: $new solid transparent;
+    border-top: $new solid transparent;
+    border-bottom: $new solid #C4CBCF;
+  }
+
+  .sb10:after {
+    $new: getNewPixels(5px, 360px);
+    border-left: $new solid #F2FBFF;
+    border-right: $new solid transparent;
+    border-top: $new solid transparent;
+    border-bottom: $new solid #F2FBFF;
+  }
+}
+
+@media screen and (min-width:360px) and (max-width: 720px) {
+  .box {
+    border: vw(1px) solid #C4CBCF;
+  }
+
+  .sb10:before {
+    $new: vw(6px);
+    border-left: $new solid #C4CBCF;
+    border-right: $new solid transparent;
+    border-top: $new solid transparent;
+    border-bottom: $new solid #C4CBCF;
+  }
+
+  .sb10:after {
+    $new: vw(5px);
+    border-left: $new solid #F2FBFF;
+    border-right: $new solid transparent;
+    border-top: $new solid transparent;
+    border-bottom: $new solid #F2FBFF;
+  }
+}
+
+@media screen and (min-width: 721px) {
+  .box {
+    border: getNewPixels(1px, 720px) solid #C4CBCF;
+  }
+
+  .sb10:before {
+    $new: getNewPixels(6px, 720px);
+    border-left: $new solid #C4CBCF;
+    border-right: $new solid transparent;
+    border-top: $new solid transparent;
+    border-bottom: $new solid #C4CBCF;
+  }
+
+  .sb10:after {
+    $new: getNewPixels(5px, 720px);
+    border-left: $new solid #F2FBFF;
+    border-right: $new solid transparent;
+    border-top: $new solid transparent;
+    border-bottom: $new solid #F2FBFF;
+  }
+}

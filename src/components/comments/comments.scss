@@ -1,0 +1,8 @@
+@import '../../scss/_functions.scss';
+
+.comments-block {
+  @include makeClass(width, 451px);
+  @include makeClass(padding-left, 20px);
+  @include makeClass(padding-right, 20px);
+  @include makeClass(margin-bottom, 11px);
+}

@@ -9,10 +9,10 @@ function ServiceListItem({ name, count, proc, larg }) {
   return (
     <div className="container row">
       <div className='bg' style={divStyle}></div>
-      <p className='text fs13 lh26 abs margin-left-6'>
+      <p className='list-item__text-name'>
         {name}
       </p>
-      <p className='text bold fs13 lh15 margin-right-40 margin-left-30'>
+      <p className='list-item__text_count'>
         {count}
       </p>
     </div>

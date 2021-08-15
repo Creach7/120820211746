@@ -1,0 +1,62 @@
+@import '../../scss/_functions.scss';
+@import '../../scss/text.scss';
+
+.comments-header__text_press {
+  @extend .text;
+  @include makeClass(font-size, 16px);
+  @include makeClass(line-height, 16px);
+  @include makeClass(margin-right, 15px);
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.comments-header__text_unpress {
+  @extend .text;
+  @include makeClass(font-size, 14px);
+  @include makeClass(line-height, 16px);
+  @include makeClass(margin-right, 15px);
+  text-decoration-line: underline;
+  color: #005DA1;
+}
+
+// .comments-header__text-all {
+//   @extend .text;
+// }
+
+.mar {
+  @include makeClass(margin-right, 16px);
+}
+
+.marbot {
+  @include makeClass(margin-bottom, 10px);
+}
+
+.like {
+  img {
+    @include makeClass(width, 11.99px);
+    @include makeClass(height, 10.75px);
+  }
+
+  p {
+    @extend .text;
+    @include makeClass(font-size, 12px);
+    @include makeClass(line-height, 14px);
+  }
+}
+
+.comment {
+  img {
+    @include makeClass(width, 13px);
+    @include makeClass(height, 12.75px);
+  }
+
+  p {
+    @extend .text;
+    @include makeClass(font-size, 12px);
+    @include makeClass(line-height, 14px);
+  }
+}
+
+.text_count {
+  @include makeClass(padding-left, 5px);
+}

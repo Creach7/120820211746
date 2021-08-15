@@ -1,0 +1,37 @@
+// functions
+@function vw($pix) {
+  @return ($pix/489px)*100vw;
+}
+
+@function percent($pix) {
+  @return ($pix/489px)*100;
+}
+
+@function getNewPixels($pix, $value) {
+  @return (percent($pix)/100)*$value;
+}
+
+@mixin makeClass($style, $pix) {
+  @media screen and (max-width: 359px) {
+    #{$style}: getNewPixels($pix, 360px);
+  }
+
+  @media screen and (min-width:360px) and (max-width: 720px) {
+    #{$style}: vw($pix);
+  }
+
+  @media screen and (min-width: 721px) {
+    #{$style}: getNewPixels($pix, 720px);
+  }
+}
+
+// @each $size in 15px,
+// 16px,
+// 20px,
+// 26px {
+//   $param: line-height;
+
+//   .#{$param}-#{$size} {
+//     @include makeClass($param, $size)
+//   }
+// }
