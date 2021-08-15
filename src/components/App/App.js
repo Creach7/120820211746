@@ -51,11 +51,17 @@ class App extends React.Component {
           date: new Date('2011-10-14T10:40:03.769Z'),
           text: `Вероника, здравствуйте! Есть такой вопрос: Особый вид 
             куниц жизненно стабилизирует кинетический момент?`
+        },
+        {
+          id: 4,
+          name: 'Гость',
+          date: new Date('2005-10-14T10:40:03.769Z'),
+          text: `Мой id - 4`
         }
       ],
-      commentsLastId: 3,
+      commentsLastId: 4,
       likesCount: 131,
-      commentsCount: 3
+      commentsCount: 4
     }
   }
   onAdd = (text) => {
