@@ -53,7 +53,8 @@
   background: #FFFBC8;
   border: 1px solid #DADADA;
   box-sizing: border-box;
-  border-radius: 5px;
+  // border-radius: 5px;
+  @include makeClass(border-radius, 5px);
   // @include makeClass(width, 364px);
 }
 

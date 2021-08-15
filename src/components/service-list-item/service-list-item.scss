@@ -5,8 +5,10 @@
   @extend .text;
   // font-weight: bold;
   position: absolute;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  // margin-top: 1px;
+  // margin-bottom: 1px;
+  @include makeClass(margin-top, 1px);
+  @include makeClass(margin-bottom, 1px);
   // @include makeClass(min-width, 15px);
   @include makeClass(font-size, 13px);
   @include makeClass(line-height, 26px);
@@ -25,7 +27,9 @@
 .bg {
   background: #ACE2F8;
   border-radius: 0px 3px 3px 0px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  // margin-top: 1px;
+  // margin-bottom: 1px;
+  @include makeClass(margin-top, 1px);
+  @include makeClass(margin-bottom, 1px);
   @include makeClass(height, 24px);
 }
