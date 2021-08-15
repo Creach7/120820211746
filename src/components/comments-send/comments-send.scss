@@ -17,7 +17,8 @@
   padding: 1%;
   background: #FFFFFF;
   border: 1px solid #000000;
-  border-radius: 1px;
+  @include makeClass(border-radius, 1px);
+  // border-radius: 1px;
 
   resize: none;
 
